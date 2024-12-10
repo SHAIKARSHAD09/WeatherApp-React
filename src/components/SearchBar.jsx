@@ -6,7 +6,7 @@ function SearchBar({ onSearch }) {
 
   const handleSearch = async () => {
     try {
-      const API_KEY = '45bc68961e69bc60e993bf8a837b64fb'; // Replace with your OpenWeatherMap API key
+      const API_KEY = 'YOUR_API_KEY'; // Replace with your OpenWeatherMap API key
       const response = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${query}&appid=${API_KEY}`);
 
       if (response.data.coord) {
